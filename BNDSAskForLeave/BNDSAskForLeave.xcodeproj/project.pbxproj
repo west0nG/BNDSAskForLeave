@@ -6,17 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ADE693BB2D6A2DF7008A7DDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE693B52D6A2DF7008A7DDF /* Preview Assets.xcassets */; };
+		ADE693BC2D6A2DF7008A7DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE693B72D6A2DF7008A7DDF /* Assets.xcassets */; };
+		ADE693BD2D6A2DF7008A7DDF /* BNDSAskForLeaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE693B82D6A2DF7008A7DDF /* BNDSAskForLeaveApp.swift */; };
+		ADE693BE2D6A2DF7008A7DDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE693B92D6A2DF7008A7DDF /* ContentView.swift */; };
+		ADE693C52D6A2F17008A7DDF /* FakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE693C42D6A2F0E008A7DDF /* FakeView.swift */; };
+		ADE693C72D6A384D008A7DDF /* Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE693C62D6A384A008A7DDF /* Ex.swift */; };
+		ADE693C92D6A3EBE008A7DDF /* textMessageViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE693C82D6A3EB3008A7DDF /* textMessageViewModifier.swift */; };
+		ADE693CB2D6A45E7008A7DDF /* messageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE693CA2D6A45D5008A7DDF /* messageModels.swift */; };
+		ADE693CD2D6A4993008A7DDF /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE693CC2D6A498D008A7DDF /* SettingView.swift */; };
+		ADE693CF2D6A51DC008A7DDF /* timeMessageViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE693CE2D6A51D4008A7DDF /* timeMessageViewModifier.swift */; };
+		ADE693D12D6A5C67008A7DDF /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE693D02D6A5C5B008A7DDF /* MessageViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		ADE693A42D6A2DD8008A7DDF /* BNDSAskForLeave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BNDSAskForLeave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE693B52D6A2DF7008A7DDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADE693B72D6A2DF7008A7DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADE693B82D6A2DF7008A7DDF /* BNDSAskForLeaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNDSAskForLeaveApp.swift; sourceTree = "<group>"; };
+		ADE693B92D6A2DF7008A7DDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADE693C42D6A2F0E008A7DDF /* FakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeView.swift; sourceTree = "<group>"; };
+		ADE693C62D6A384A008A7DDF /* Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex.swift; sourceTree = "<group>"; };
+		ADE693C82D6A3EB3008A7DDF /* textMessageViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textMessageViewModifier.swift; sourceTree = "<group>"; };
+		ADE693CA2D6A45D5008A7DDF /* messageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageModels.swift; sourceTree = "<group>"; };
+		ADE693CC2D6A498D008A7DDF /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		ADE693CE2D6A51D4008A7DDF /* timeMessageViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeMessageViewModifier.swift; sourceTree = "<group>"; };
+		ADE693D02D6A5C5B008A7DDF /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		ADE693A62D6A2DD8008A7DDF /* BNDSAskForLeave */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BNDSAskForLeave;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ADE693A12D6A2DD8008A7DDF /* Frameworks */ = {
@@ -32,7 +49,7 @@
 		ADE6939B2D6A2DD8008A7DDF = {
 			isa = PBXGroup;
 			children = (
-				ADE693A62D6A2DD8008A7DDF /* BNDSAskForLeave */,
+				ADE693BA2D6A2DF7008A7DDF /* BNDSAskForLeave */,
 				ADE693A52D6A2DD8008A7DDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +60,72 @@
 				ADE693A42D6A2DD8008A7DDF /* BNDSAskForLeave.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ADE693B62D6A2DF7008A7DDF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ADE693B52D6A2DF7008A7DDF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADE693BA2D6A2DF7008A7DDF /* BNDSAskForLeave */ = {
+			isa = PBXGroup;
+			children = (
+				ADE693B82D6A2DF7008A7DDF /* BNDSAskForLeaveApp.swift */,
+				ADE693BF2D6A2E05008A7DDF /* MVVM */,
+				ADE693C02D6A2E1D008A7DDF /* Design */,
+				ADE693C62D6A384A008A7DDF /* Ex.swift */,
+				ADE693B62D6A2DF7008A7DDF /* Preview Content */,
+				ADE693B72D6A2DF7008A7DDF /* Assets.xcassets */,
+			);
+			path = BNDSAskForLeave;
+			sourceTree = "<group>";
+		};
+		ADE693BF2D6A2E05008A7DDF /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				ADE693C32D6A2EAA008A7DDF /* Models */,
+				ADE693C12D6A2EA5008A7DDF /* Views */,
+				ADE693C22D6A2EA7008A7DDF /* ViewModels */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		ADE693C02D6A2E1D008A7DDF /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				ADE693CE2D6A51D4008A7DDF /* timeMessageViewModifier.swift */,
+				ADE693C82D6A3EB3008A7DDF /* textMessageViewModifier.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		ADE693C12D6A2EA5008A7DDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADE693CC2D6A498D008A7DDF /* SettingView.swift */,
+				ADE693C42D6A2F0E008A7DDF /* FakeView.swift */,
+				ADE693B92D6A2DF7008A7DDF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADE693C22D6A2EA7008A7DDF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ADE693D02D6A5C5B008A7DDF /* MessageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ADE693C32D6A2EAA008A7DDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ADE693CA2D6A45D5008A7DDF /* messageModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +142,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				ADE693A62D6A2DD8008A7DDF /* BNDSAskForLeave */,
 			);
 			name = BNDSAskForLeave;
 			packageProductDependencies = (
@@ -109,6 +189,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE693BB2D6A2DF7008A7DDF /* Preview Assets.xcassets in Resources */,
+				ADE693BC2D6A2DF7008A7DDF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +201,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE693C92D6A3EBE008A7DDF /* textMessageViewModifier.swift in Sources */,
+				ADE693D12D6A5C67008A7DDF /* MessageViewModel.swift in Sources */,
+				ADE693CB2D6A45E7008A7DDF /* messageModels.swift in Sources */,
+				ADE693C72D6A384D008A7DDF /* Ex.swift in Sources */,
+				ADE693CD2D6A4993008A7DDF /* SettingView.swift in Sources */,
+				ADE693C52D6A2F17008A7DDF /* FakeView.swift in Sources */,
+				ADE693BD2D6A2DF7008A7DDF /* BNDSAskForLeaveApp.swift in Sources */,
+				ADE693CF2D6A51DC008A7DDF /* timeMessageViewModifier.swift in Sources */,
+				ADE693BE2D6A2DF7008A7DDF /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,11 @@
 
 import SwiftUI
 
+
+
 struct FakeView: View {
+    @StateObject private var vm = MessageViewModel()
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
         VStack(spacing:0){
             UpBar()
@@ -18,6 +22,7 @@ struct FakeView: View {
             DownBar()
         }
         .ignoresSafeArea()
+        .navigationBarBackButtonHidden(true)
     }
 }
 
