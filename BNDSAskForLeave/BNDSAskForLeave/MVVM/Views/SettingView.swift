@@ -108,9 +108,15 @@ struct SettingView: View {
                     HStack{
                         Button{
                             vm.addMessage()
-                            print(vm.messageList)
                         }label:{
                             Text("提交请假")
+                        }
+                    }
+                    HStack{
+                        Button{
+                            vm.clearAllMessages()
+                        }label:{
+                            Text("清空请假记录")
                         }
                     }
                 }

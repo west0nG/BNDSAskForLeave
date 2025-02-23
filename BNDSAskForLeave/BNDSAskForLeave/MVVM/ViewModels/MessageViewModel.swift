@@ -8,7 +8,11 @@
 import SwiftUI
 
 class MessageViewModel: ObservableObject {
-    @Published var messageList: [messageInfo] = []
+    @Published var messageList: [messageInfo] = []{
+        didSet{
+            saveMessages()
+        }
+    }
     @Published var messages:[messageInfo] = []
     @Published var nameInput: String = "郭语石"
     @Published var gradeInput: gradeType = .Grade12
@@ -19,6 +23,10 @@ class MessageViewModel: ObservableObject {
     @Published var reasonInput: String = "提前回家"
     @Published var teacherInput: String = "焦方圆(教师)"
     @Published var askForLeaveTimeInput: Date = Date()
+    
+    init() {
+            loadMessages() // 初始化时加载保存的数据
+        }
     
     func addMessage() {
         let newMessage = messageInfo(
@@ -35,16 +43,27 @@ class MessageViewModel: ObservableObject {
         messageList.append(newMessage)
     }
     
-    func saveMessages() {
-        if let encoded = try? JSONEncoder().encode(messageList) {
-            UserDefaults.standard.set(encoded, forKey: "messageList")
+    private func saveMessages() {
+        do {
+            let encoded = try JSONEncoder().encode(messageList)
+            UserDefaults.standard.set(encoded, forKey: "SavedMessages")
+        } catch {
+            print("保存失败")
         }
     }
     
-    func loadMessages() {
-        if let data = UserDefaults.standard.data(forKey: "messageList"),
-           let decoded = try? JSONDecoder().decode([messageInfo].self, from: data) {
-            messageList = decoded
+    private func loadMessages() {
+        if let data = UserDefaults.standard.data(forKey: "SavedMessages") {
+            do {
+                messageList = try JSONDecoder().decode([messageInfo].self, from: data)
+            } catch {
+                print("加载失败")
+            }
         }
     }
+    
+    func clearAllMessages() {
+            messageList.removeAll()  // 清空数组
+            UserDefaults.standard.removeObject(forKey: "SavedMessages")  // 清除存储的数据
+        }
 }
