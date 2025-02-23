@@ -51,7 +51,6 @@ struct messageInfo: Identifiable, Codable {
     }
 }
 
-// 数组定义保持不变
-var messageList: [messageInfo] = []
+
 
 

@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct FakeView: View {
-    @StateObject private var vm = MessageViewModel()
+    @EnvironmentObject var vm: MessageViewModel
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         VStack(spacing:0){
@@ -31,9 +31,10 @@ struct FakeView: View {
 }
 
 struct textMessage: View {
+    @EnvironmentObject var vm: MessageViewModel
     var body: some View {
         VStack(spacing:16){
-            ForEach(messageList) { message in
+            ForEach(vm.messageList) { message in
                 VStack(spacing:16){
                     Text(message.getFormattedTime())
                         .modifier(timeMessageViewModifier())

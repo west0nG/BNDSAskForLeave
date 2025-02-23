@@ -8,7 +8,8 @@
 import SwiftUI
 
 class MessageViewModel: ObservableObject {
-    @Published var messages: [messageInfo] = []
+    @Published var messageList: [messageInfo] = []
+    @Published var messages:[messageInfo] = []
     @Published var nameInput: String = "郭语石"
     @Published var gradeInput: gradeType = .Grade12
     @Published var startDateInput: Date = Date()

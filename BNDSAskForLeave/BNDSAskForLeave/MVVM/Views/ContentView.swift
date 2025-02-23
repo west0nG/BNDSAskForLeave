@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var vm = MessageViewModel()
     var body: some View {
         NavigationStack{
             VStack(spacing:10) {

@@ -8,7 +8,7 @@ import SwiftUI
 
 struct SettingView: View {
     @Environment(\.dismiss) private var dismiss
-    @StateObject private var vm = MessageViewModel()
+    @EnvironmentObject var vm: MessageViewModel
     @AppStorage("messageList") private var messageListData: Data = Data()
     var body: some View {
         VStack(spacing:0){
@@ -108,8 +108,7 @@ struct SettingView: View {
                     HStack{
                         Button{
                             vm.addMessage()
-                            vm.saveMessages()
-                            print(messageList)
+                            print(vm.messageList)
                         }label:{
                             Text("提交请假")
                         }
@@ -119,13 +118,14 @@ struct SettingView: View {
                     HStack{
                         Section("历史记录") {
                             HStack{
-                                if messageList.isEmpty {
+                                if vm.messageList.isEmpty {
                                     Text("暂无记录")
                                         .foregroundColor(.gray)
                                 } else {
                                     VStack{
-                                        ForEach(messageList) { message in
+                                        ForEach(vm.messageList) { message in
                                             Text(message.formatted())
+                                            Text("")
                                         }
                                     }
                                 }
